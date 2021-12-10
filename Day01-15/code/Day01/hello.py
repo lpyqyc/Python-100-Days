@@ -20,3 +20,30 @@ print('hello, world!')
 print('你好', '世界')
 print('hello', 'world', sep=', ', end='!')
 print('goodbye, world', end='!\n')
+
+import turtle
+
+turtle.pensize(4)
+turtle.pencolor('red')
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.mainloop()
+
+import turtle
+import time
+
+# 同时设置pencolor=color1, fillcolor=color2
+turtle.color("red", "yellow")
+
+turtle.begin_fill()
+for _ in range(50):
+    turtle.forward(200)
+    turtle.left(170)
+turtle.end_fill()
+
+turtle.mainloop()
