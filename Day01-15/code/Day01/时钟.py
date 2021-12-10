@@ -117,6 +117,7 @@ def Tick():
     printer.home()
     turtle.tracer(True)
 
+
     # 100ms后继续调用tick
     turtle.ontimer(Tick, 100)
 
